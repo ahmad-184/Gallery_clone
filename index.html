@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Koulen&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada:wght@300;400;500;600;700&family=Roboto+Flex:opsz,wght@8..144,100;8..144,200;8..144,300;8..144,400;8..144,500;8..144,600;8..144,700;8..144,800;8..144,900;8..144,1000&family=Vazirmatn:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="title titleH1">
+            <h1>you need image?<br> you find it here. just search it</h1>
+        </div>
+        <section class="mainSec">
+            <form id="form">
+                <div class="searchBox">
+                    <div>
+                        <input type="text" autocomplete="off" placeholder="Search image...">
+                    </div>
+                    <div>
+                        <button type="submit" class="searchBtn">
+                            <span><i class="fas fa-search"></i></span>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <section class="suggSection">
+                <div class="suggCont">
+                    <div class="recentSearch">
+                        <div class="title"
+                            style="display: flex;align-items:center;"
+                        >
+                            <p>recent searches</p>
+                            <span class="clearSearch">
+                                <i class="fas fa-times"></i>
+                            </span>
+                        </div>
+                        <div class="searchesContent">
+                            <!-- <span data-value="car">car <span><svg fill="gray" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 30 30" width="18px" height="18px"><path d="M 13 3 C 7.4889971 3 3 7.4889971 3 13 C 3 18.511003 7.4889971 23 13 23 C 15.396508 23 17.597385 22.148986 19.322266 20.736328 L 25.292969 26.707031 A 1.0001 1.0001 0 1 0 26.707031 25.292969 L 20.736328 19.322266 C 22.148986 17.597385 23 15.396508 23 13 C 23 7.4889971 18.511003 3 13 3 z M 13 5 C 17.430123 5 21 8.5698774 21 13 C 21 17.430123 17.430123 21 13 21 C 8.5698774 21 5 17.430123 5 13 C 5 8.5698774 8.5698774 5 13 5 z"/></svg></span></span> -->
+                        </div>
+                    </div>
+                    <!-- <div class="collections">
+    
+                    </div>
+                    <div class="trendingTopic">
+                        <div class="title">
+                            <p>trending topics</p>
+                        </div>
+                        <div class="trendingContent">
+                            <span data-value="flowers"><img src="21.jpg" alt=""><span>flowers</span></span>
+                            <span data-value="office"><img src="21.jpg" alt=""><span>office</span></span>
+                            <span data-value="coffee"><img src="21.jpg" alt=""><span>coffee</span></span>
+                            <span data-value="texture"><img src="21.jpg" alt=""><span>texture</span></span>
+                            <span data-value="house"><img src="21.jpg" alt=""><span>house</span></span>
+                            <span data-value="business"><img src="21.jpg" alt=""><span>business</span></span>
+                            <span data-value="summer"><img src="21.jpg" alt=""><span>summer</span></span>
+                            <span data-value="city"><img src="21.jpg" alt=""><span>city</span></span>
+                            <span data-value="beach"><img src="21.jpg" alt=""><span>beach</span></span>
+                            <span data-value="technology"><img src="21.jpg" alt=""><span>technology</span></span>
+                        </div>
+                    </div> -->
+                </div>
+            </section>
+        </section>
+    </header>
+    <main>
+        <div class="tab_btn">
+            <button class="imageBtn btnTab" data-blue>
+                image
+            </button>
+            <button class="videoBtn btnTab">
+                video
+            </button>
+            <span class="active-tab"></span>
+        </div>
+        <div class="tab-detail">
+            <div>
+                <p class="text-Detail">Free Stock Photos</p>
+            </div>
+            <!-- <ul class="active--Drop">
+                <li><span class="trendNew">color filter</span> <span><i class="fas fa-caret-down"></i></span></li>
+            </ul>
+            <ul>
+                <li id="btnn" data-subject="red" data-active-sub>trending</li>
+                <li id="btnn" data-subject="blue">new</li>
+                <li id="btnn" data-subject="blue">new</li>
+                <li id="btnn" data-subject="blue">new</li>
+                <li id="btnn" data-subject="blue">new</li>
+            </ul> -->
+        </div>
+        <div class="" id="container">
+            <!-- single box -->
+        </div>
+        <div class="nextPageButton">
+            <button id="more">
+                show more
+            </button>
+        </div>
+        <div class="pagecontroler">
+            <button id="nextPage">
+                <i class="fas fa-spinner fa-pulse"></i>
+            </button>
+        </div>
+    </main>
+    <section class="slideShowImg">
+        <div class="bg"></div>
+        <div class="slide">
+            <span id="closeSlide" class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <div class="imgSlide">
+                <img id="largeImg" src="" title="">
+            </div>
+            <div class="downloadLink">
+                <a href="" target="_blank" id="mainLink">free download</a>
+                <span id="toggleDLlist"><i class="fas fa-caret-down"></i></span>
+                <div class="listUrl">
+                    <a id="orginal" target="_blank" href="">orginal</a>
+                    <a id="landscape" target="_blank" href="">landscape</a>
+                    <a id="medium" target="_blank" href="">medium</a>
+                    <a id="portrait" target="_blank" href="">portrait</a>
+                    <a id="small" target="_blank" href="">small</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="slideShowVideo">
+        <div class="bg"></div>
+        <div class="slide">
+            <span id="closeSlide" class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+            <div class="videoSlide">
+                <video id="videotag" preload="none" loop></video>
+                <span class="palyIcon">
+                    <span><i class="fas fa-play-circle"></i></span>
+                </span>
+            </div>
+            <div class="downloadLink">
+                <a href="" id="mainLink">free download</a>
+                <span id="toggleDLlist"><i class="fas fa-caret-down"></i></span>
+                <div class="listUrl">
+                    <a id="orginal" href="">orginal</a>
+                    <a id="medium" href="">medium</a>
+                    <a id="small" href="">small</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="localforage.min.js"></script>
+<script  src="app.js"></script>
+</html>
