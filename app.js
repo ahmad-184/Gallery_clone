@@ -246,7 +246,7 @@ class gallery {
                 videoSlide.style.display = 'flex'
                 closeBtn[1].addEventListener('click',() => close() )
                 videoTag.setAttribute('poster',box.image)
-                videoTag.src = box.video_files[1].link
+                videoTag.src = box.video_files[2].link
                 mainLink[1].href = box.video_files[2].link
                 orginal[1].href = box.video_files[0].link
                 medium[1].href = box.video_files[2].link
