@@ -331,8 +331,13 @@ const buildHistoryHtml = () => {
 
         span.addEventListener('click', () => {
             container.innerHTML= ''
-            
-            imageActive.hasAttribute('data-blue') ? callCalss.searchImg(value) : callCalss.searchVideo(value)
+            if (imageActive.hasAttribute('data-blue')) {
+                textContentDetail.innerHTML =  `${value} photos`
+                callCalss.searchImg(value) 
+            } else {
+                textContentDetail.innerHTML =  `${value} videos`
+                callCalss.searchVideo(value)
+            }
         })
         historyContainer.appendChild(span)
         section.removeAttribute('data-form-active')
