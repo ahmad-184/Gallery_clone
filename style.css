@@ -117,6 +117,7 @@ form {
     max-width: 500px;
     flex-direction: column;
     position: relative;
+    min-width: 300px;
 }
 
 .searchBox {
@@ -573,7 +574,7 @@ main {
 
 .pagecontroler {
     position: fixed;
-    bottom: 2rem;
+    bottom: 1rem;
     left: 0;
     right: 0;
     display: flex;
