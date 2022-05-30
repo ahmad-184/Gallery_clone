@@ -149,7 +149,7 @@ class gallery {
     }
 
     getApiUrl() {
-        let apiUrl = `https://api.pexels.com/v1/curated?&page=${pageIndex}&per_page=20`
+        let apiUrl = `https://api.pexels.com/v1/curated?&page=${pageIndex}&per_page=21`
         this.getImgData(apiUrl)
     }
 
@@ -274,18 +274,18 @@ class gallery {
 
     getSearchImg(value = null) {
         // container = ''
-        const url = `https://api.pexels.com/v1/search?query=${value != null ? value : searchValue}&page=${pageIndex}&per_page=20`
+        const url = `https://api.pexels.com/v1/search?query=${value != null ? value : searchValue}&page=${pageIndex}&per_page=21`
         this.getImgData(url)
     }
 
     getSearchVideo(value = null) {
         // this.container = ''
-        const url = `https://api.pexels.com/videos/search?query=${value != null ? value : searchValue}&page=${pageIndex}&per_page=15`
+        const url = `https://api.pexels.com/videos/search?query=${value != null ? value : searchValue}&page=${pageIndex}&per_page=16`
         this.getImgData(url)
     }
 
     videos() {
-        const url = `https://api.pexels.com/videos/popular?&page=${pageIndex}&per_page=15`
+        const url = `https://api.pexels.com/videos/popular?&page=${pageIndex}&per_page=16`
         this.getImgData(url)
         input.value = ''
     }
