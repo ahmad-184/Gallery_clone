@@ -16,6 +16,7 @@ const nextBtnCont = document.querySelector('.nextPageButton')
 const textContentDetail = document.querySelector('.text-Detail')
 const downloadListButton = document.querySelectorAll('#toggleDLlist')
 const downloadList = document.querySelector('.listUrl')
+const toTopBtn = document.querySelector('.backTotop')
 let pageIndex
 let searchValue
 let callCalss
@@ -374,3 +375,6 @@ document.querySelector('body').addEventListener('click', () => {
     })
     if (section.hasAttribute('data-form-active')) { section.removeAttribute('data-form-active') }
 })
+
+window.addEventListener('scroll', () => { toTopBtn.classList.toggle('active-ToTop', window.scrollY > 500) })
+toTopBtn.addEventListener('click', () => window.scrollTo(0,0))
